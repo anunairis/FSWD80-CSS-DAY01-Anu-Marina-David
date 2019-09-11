@@ -3,19 +3,7 @@ div {
 	margin:  5px;
 }
 
-div#third>p {
-	visibility: hidden;
-}
-
-h1 {
-	visibility: hidden;
-}
-
-div#second * {
-	visibility: hidden;
-}
-
-img {
-	visibility: visible !important;
+#first p {
+	font-size: 150%;
 }
 
