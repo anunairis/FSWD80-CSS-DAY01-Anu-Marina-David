@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout with sidebar</title>
+<style>
+	header {
+		background-color: green;
+		text-align: center;
+		color: #eee;
+		padding: 15px;
+	}
+
+	nav {
+		float: left;
+	  width: 15%;
+	  background: #ccc;
+	  padding: 20px;
+	}
+
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 70%;
+	  background-color: #ebb;
+  }
+
+  section:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  	width:  100%;
+	}
+
+  footer {
+	  background-color: #777;
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	@media (max-width: 600px) {
+		nav, article {
+    	width: 100%;
+    	height: auto;
+  	}
+	}
+
+</style>
+</head>
+<body>
+	<header>
+		<h2>Best title ever</h2>
+	</header>
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#">Politics</a></li>
+				<li><a href="#">Finance</a></li>
+				<li><a href="#">Science</a></li>
+				<li><a href="#">Nature</a></li>
+				<li><a href="#">Coding</a></li>
+				<li><a href="#">Celebrities</a></li>
+				<li><a href="#">Exclusive</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero perferendis magnam commodi doloribus, harum iusto sit tempora similique et maiores culpa neque ex quae error. Obcaecati, ullam modi itaque!
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, assumenda, quas.</p>
+		</article>
+	</section>
+
+	<footer>
+		<p>Copyright Lorem. All rights reserved. 2019</p>
+	</footer>
+
+</body>
+</html>
